@@ -1,0 +1,14 @@
+#logButton{
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: default;
+    outline: 0;
+    width: 20px;
+    height: 20px;
+}
+
+#questionnaireButton{
+    height: 200px;
+    width: 200px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <meta charset="utf8">
+        <link rel="stylesheet" type="text/css" href="../css/questionnaire.css">
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script src="../js/task.js"></script>
+    </head>
+    <body>
+        <h1>Software Engineering Task</h1>
+        <p>
+            The Java program analyses data sets and displays a set of results after analysing the data. 
+            This program processes a file containing data about dependencies in code. The program will display a list of 
+            modules that match certain queries. The queries that can be given are:
+            <ul>
+                <li>Summary</li>
+                <li>DepCount</li>
+                <li>Fanout</li>
+                <li>FanIn</li>
+                <li>Uses</li>
+                <li>Static</li>
+                <li>Aggregates</li>
+            </ul>
+        </p>
+        <p>
+        Currently, the queries (with the exception of “Summary” and “DepCount”) displays a list of modules in the 
+        alphabetical order of their <b>fully-qualified</b> names (i.e., full file name including directory). For example, 
+        for modules x.y.A, m.n.M, x.m.B, the current output is:<br>
+        m.n.M<br>
+        x.m.B<br>
+        x.y.A<br>
+        Your task is to modify the code so that the modules are displayed in the alphabetical order of their <b>simple 
+        class names</b> (i.e., last segment of file name). For example, for modules x.y.A, m.n.M, x.m.B, the modified 
+        output would be:<br>
+        x.y.A<br>
+        x.m.B<br>
+        m.n.M<br>
+        </p>
+        <p>
+            Note: Since the Summary and DepCount queries do not follow the same ordering logic, you <b>DO NOT</b> need to modify
+            the ordering of the modules for these queries.
+        </p>
+        <h2>Eclipse project structure</h2>
+        <p>
+            The main method is found in analyser.dependencies.CLI<br>
+            The test cases are found in analyser.test.CLITest<br>
+            The project has been set up so that the program can be executed by running the JUnit tests. All of the tests 
+            must pass for your implementation to be considered correct, as shown below:<br><br>
+            <img src="../../img/allpass.png" style="display: block;margin-left: auto; margin-right: auto;" alt="allpass"><br>
+            You can run the test by navigating to analyser.test.CLITest and clicking this button. <img src="../../img/run.png" alt="run">
+        </p>
+        <h2>Resources</h2>
+        <p>
+            You can use any online resources. Please only use Google Chrome and not Microsoft Edge.
+        </p>
+        <p>
+            Optional resource: https://docs.oracle.com/javase/tutorial/
+        </p>
+        <p>
+            Below, there are questions about the source code. You can answer them at any time within the 30 minute time-frame.
+        </p>
+        <h1>Software Engineering Questions</h1>
+        <ol>
+            <li>
+                <span id="q1">Which class(es) are responsible for <i>displaying</i> the output?</span><br>
+                <textarea class="answerBox" id="a1"></textarea>
+            </li><br>
+            <li>
+                <span id="q2">Which method(s) contain the implementation for <i>displaying</i> the output?</span><br>
+                <textarea class="answerBox" id="a2"></textarea>
+            </li><br>
+            <li>
+                <span id="q3">Which class(es) are responsible for <i>ordering</i> the output?</span><br>
+                <textarea class="answerBox" id="a3"></textarea>
+            </li><br>
+            <li>
+                <span id="q4">Which method(s) contain the implementation for <i>ordering</i> the output?</span><br>
+                <textarea class="answerBox" id="a4"></textarea>
+            </li><br>
+        </ol>
+        <p>
+            Click the button below when:
+            <ol>
+                <li>You’ve tested and finished all code modifications, AND </li>
+                <li>you’ve answered the questions above.</li>
+            </ol> 
+            <button id="doneButton">I'm done</button>
+        </p>
+    </body>
+  </html>

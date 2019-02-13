@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <meta charset="utf8">
+        <link rel="stylesheet" type="text/css" href="../css/questionnaire.css">
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script src="../js/end.js"></script>
+    </head>
+
+    <body>
+        <h1>Thank you!</h1>
+        <div id="postTaskQuestionnaire">
+            <p style="text-align:center;">Our facilitator will help you remove the skin conductance sensor<br><br>
+                Please answer the following post-study questions:
+            </p>
+            <hr class="thickLine">
+            <form>
+                <h2 id="degreelbl">Which degree are you studying?</h2>
+                <input type="radio" name="degree" value="Computer Science" class="degreebtn" id="csbutton" checked> Computer Science<br>
+                <input type="radio" name="degree" value="Software Engineering" class="degreebtn" id="sebutton"> Software Engineering<br>
+                <input type="radio" name="degree" value="Other" class="degreebtn" id="otherbutton"> Other<br>
+                <input type="text" name="degree" class="degreebtn" id="otherDegree">
+                <h2 id="agelbl">What is your age?</h2>
+                <input type="text" name="age" id="participantAge">
+                <h2 id="genderlbl">What is your gender?</h2>
+                <input type="text" name="gender" id="participantGender">
+                <hr>
+                <h2>Consider this statement:</h2>
+                <p id="familiaritylbl">My unfamiliarity with Eclipse slowed down my performance on this task.</p>
+                <h3>Select 'true' or 'false' for how the above statement applied to your performance.</h3>
+                <input type="radio" name="familiarity" value="True" checked> True
+                <input type="radio" name="familiarity" value="False"> False<br>
+                <h3 id="participantAffectedlbl">Describe how your familiarity with Eclipse affected your task performance, if at all: </h3>
+                <textarea class="answerBox" name="affected" id="participantAffected"></textarea>
+                <h3 id="participantExperiencelbl">In a sentence or two, describe your experience with Eclipse. Please include courses for which you used Eclipse, whether you used it for industry work, and/or hobby projects.</h3>
+                <textarea class="answerBox" name="experience" id="participantExperience"></textarea>
+                <hr>
+                <h2>Please fill in each scale below for the code understanding and modification task.</h2>
+                <h3 id="mentalDemandlbl">Mental Demand:  How mentally demanding was the task?</h3>
+                Very Low<input id="mentalDemand" class="nasatlx" type="range" min="1" max="20" value="11">Very High<br>
+                <h3 id="physicalDemandlbl"><br>Physical Demand: How physically demanding was the task?</h3>
+                Very Low<input id="physicalDemand" class="nasatlx" type="range" min="1" max="20" value="11">Very High<br>
+                <h3 id="temporalDemandlbl"><br>Temporal Demand: How hurried or rushed was the pace of the task?</h3>
+                Very Low<input id="temporalDemand" class="nasatlx" type="range" min="1" max="20" value="11">Very High<br>
+                <h3 id="performancelbl"><br>Performance: How successful were you in accomplishing what you were asked to do?</h3>
+                Very Low<input id="performance" class="nasatlx" type="range" min="1" max="20" value="11">Very High<br>
+                <h3 id="effortlbl"><br>Effort: How hard did you have to work to accomplish your level of performance?</h3>
+                Very Low<input id="effort" class="nasatlx" type="range" min="1" max="20" value="11">Very High<br>
+                <h3 id="frustrationlbl"><br>Frustration: How insecure, discouraged, irritated, stressed, and annoyed were you?</h3>
+                Very Low<input id="frustration" class="nasatlx" type="range" min="1" max="20" value="11">Very High<br>
+            </form>
+        </div>
+        <hr class="thickLine">
+        <h2 id="hypothesislbl">What do you think is the hypothesis for this study?</h2>
+        <textarea class="answerBox" id="hypothesis"></textarea>
+        <button id="hypothesisSubmitButton">Next</button>
+        
+    </body>
+  </html>
