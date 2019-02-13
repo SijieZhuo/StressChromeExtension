@@ -1,12 +1,10 @@
-# MonitorPlugin
+# MonitorPlugin (Referenced)
 
 ## What is MonitorPlugin?
 MonitorPlugin is a Google Chrome extension which records the browser activity of users in Google Chrome. This extension also provides access to a questionnaire use for a study that investigates the affects of code quality on programmer behaviour.
 
 MonitorPlugin was developed for our Part 4 Software Engineering Research Project.
 
-## Chrome Plugin Installation
-This extension can be added to your Google Chrome Browser using this link: https://chrome.google.com/webstore/detail/monitor-plugin/dcmbegkagnclhobcbmkbacmoddedjomb
 
 ## Development Setup
 We recommend using Visual Studio Code when contributing to MonitorPlugin
